@@ -75,8 +75,8 @@ new SimpleLightbox('.gallery a', {
     captionDelay: 250,
 });
 function createGallery() {
-    let itemsLi = [];
-    for (let i = 0; i < 9; i++) {
+    const itemsLi = [];
+    for (let i = 0; i < images.length; i++) {
         // create li
         const itemLi = document.createElement('li');
         itemLi.classList.add('gallery-item');
